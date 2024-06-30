@@ -2,7 +2,7 @@ manifestVersion: 1
 id: yourspotify
 name: YourSpotify
 tagline: Self-hosted Spotify Client
-icon: https://commons.wikimedia.org/wiki/File:Spotify_icon.svg
+icon: https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg
 category: music
 version: "1.0.0"
 port: 3000

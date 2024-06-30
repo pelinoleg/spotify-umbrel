@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: yourspotify
+name: YourSpotify
+tagline: Self-hosted Spotify Client
+icon: https://commons.wikimedia.org/wiki/File:Spotify_icon.svg
+category: music
+version: "1.0.0"
+port: 3000
+description: >-
+  A Docker container for YourSpotify, allowing you to self-host your own Spotify client on Umbrel.
+
+developer: Pelin Oleg
+website: https://github.com/pelinoleg/spotify-umbrel
+submitter: Pelin Oleg
+submission: https://github.com/pelinoleg/spotify-umbrel
+repo: https://github.com/pelinoleg/spotify-umbrel
+support: https://github.com/pelinoleg/spotify-umbrel/issues
+
+gallery:
+  - https://user-images.githubusercontent.com/17204739/154752226-c2215a51-e20e-4ade-ac63-42c5abb25240.png
+
+releaseNotes: >-
+  Initial release of YourSpotify on Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

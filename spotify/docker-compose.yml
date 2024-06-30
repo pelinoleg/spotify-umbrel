@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  server:
+    image: yooooomi/your_spotify_server
+    restart: always
+    ports:
+      - "8080:8080"
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    environment:
+      API_ENDPOINT: http://umbrel.local:8080 # This MUST be included as a valid URL in the spotify dashboard (see below)
+      CLIENT_ENDPOINT: http://umbrel.local:3000
+      SPOTIFY_PUBLIC: bc4c66024bbe4c959c8127e06c8cee5e
+      SPOTIFY_SECRET: 436e2d526b774973b3fa1e1a1d78c0e7
+  mongo:
+    container_name: mongo
+    image: mongo:6
+    volumes:
+      - /home/umbrel/umbrel/my-configs/spotify-config:/data/db
+
+  web:
+    image: yooooomi/your_spotify_client
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      API_ENDPOINT: http://umbrel.local:8080
